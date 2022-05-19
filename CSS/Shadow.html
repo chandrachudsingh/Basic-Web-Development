@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box and Text shadow</title>
+    <style>
+        .container{
+            display: flex;
+        }
+        .card{
+            padding: 23px 12px;
+            margin: 23px 12px;
+            background-color: rgb(230, 176, 230);
+            /* box-shadow: offset-x offset-y color; */
+            /* box-shadow: 10px 13px mediumaquamarine; */
+            /* box-shadow: -10px -13px mediumaquamarine; */
+
+            /* box-shadow: offset-x offset-y blur-radius color; */
+            box-shadow: 10px 13px 5px mediumseagreen;
+
+            /* box-shadow: offset-x offset-y blur-radius spred-radius color; */
+            box-shadow: 10px 13px 5px 5px mediumseagreen;
+
+            /* rgba(r, g, b, alpha) where alpha controls the darkness of the color */
+            box-shadow: 10px 13px 5px 5px rgba(55, 163, 177, 0.4);
+
+            /* inset means inside shadow */
+            box-shadow: inset 8px 10px rgb(141, 240, 182);
+
+            /* for multiple shadows */
+            box-shadow: 6px 4px chocolate, 5px 8px darkcyan;
+        }
+
+        .card h2{
+            /* text-shadow: offset-x offset-y color; */
+            text-shadow: 3px 4px slategray;
+
+            /* text-shadow: offset-x offset-y blur-radius color; */
+            text-shadow: 3px 4px 2px slategray;
+            moz
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h2>Card-1</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, at nihil, molestias suscipit perferendis necessitatibus delectus sequi eaque accusantium earum ea ducimus dolorum est quisquam esse nemo iusto architecto laboriosam harum pariatur obcaecati praesentium!</p>
+        </div>
+        <div class="card" id="card-2">
+            <h2>Card-2</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, at nihil, molestias suscipit perferendis necessitatibus delectus sequi eaque accusantium earum ea ducimus dolorum est quisquam esse nemo iusto architecto laboriosam harum pariatur obcaecati praesentium!</p>
+        </div>
+        <div class="card" id="card-3">
+            <h2>Card-3</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, at nihil, molestias suscipit perferendis necessitatibus delectus sequi eaque accusantium earum ea ducimus dolorum est quisquam esse nemo iusto architecto laboriosam harum pariatur obcaecati praesentium!</p>
+        </div>
+    </div>
+</body>
+</html>

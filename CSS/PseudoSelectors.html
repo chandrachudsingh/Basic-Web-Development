@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Selectors & more designing</title>
+        <style>
+            .container{
+                border: 2px solid purple;
+                background-color: rgb(198, 239, 255);
+                padding: 34px;
+                margin: 34px;
+                width: 450px;
+            }
+
+            a{
+                text-decoration: none; /* to remove the underline */
+                color: black;
+            }
+
+            /* when the cursor goes on the the link */
+            a:hover{
+                color: rgb(164, 74, 248);
+                background-color:rgb(193, 250, 171);
+            }
+            /* when the site is already visited */
+            a:visited{
+                color: rgb(169, 240, 159);
+                background-color: rgb(114, 150, 250);
+            }
+            /* when clicked on it */
+            a:active{
+                background-color: sandybrown;
+            }
+
+            /* when the cursor goes on the button */
+            button:hover{
+                color: rgb(164, 74, 248);
+                border: 1px solid black;
+            }
+
+            .btn{
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                background-color: rgb(121, 195, 245);
+                padding: 3px;
+                border: none;
+                cursor: pointer;   /* to get the pointer when cursor goes on it */
+                font-size: 13px;
+                border-radius: 4px;
+            }
+        </style>
+</head>
+<body>
+    <div class="container" id="cont1">
+        <h3>This is my heading</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure cum, error id, alias saepe nobis amet rerum fugiat, veniam at excepturi obcaecati? Corporis laboriosam at quam quos porro error illum dolorem rerum itaque ratione!</p>
+        <a href="https://khatrimaza.kim/" class="btn"> Read more</a>
+        <button class="btn">Contact us</button>
+    </div>
+</body>
+</html>

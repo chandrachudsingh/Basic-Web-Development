@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>before & after Pseudo Selectors</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-color: black;
+            color: white;
+        }
+
+        header::before{
+            background: url('https://source.unsplash.com/random') no-repeat center center/cover;
+            content: "";
+            position: absolute;
+            top: 0px;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.4;
+        }
+        .navigation {
+            display: flex;
+            font-size: 20px;
+        }
+
+        li {
+            list-style: none;
+            padding: 20px 23px;
+        }
+
+        section {
+            font-family: 'Lobster', cursive;
+            height: 348px;
+            margin: 3px 23px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        h1{
+            font-size: 3rem;
+        }
+        section::before{
+            content: "This is content";
+        }
+        /* section::after{
+            content: "This is content";
+        } */
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Contact Us</li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1>Welcome to Coding World</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos, laboriosam? Aspernatur ea iste soluta enim quisquam sit, eius ex, voluptas quae officia vitae, quasi inventore autem cumque facilis etamet! Ad voluptas aliquid inventore.</p>
+    </section>
+</body>
+
+</html>

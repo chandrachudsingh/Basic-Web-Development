@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment, float and clear</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Shadows Into Light', cursive;
+        }
+
+        .container {
+            width: 600px;
+            border: 3px solid royalblue;
+            margin: 16px auto;
+            background-color: rgb(222, 207, 236);
+        }
+
+        .item {
+            border: 3px solid grey;
+            margin: 12px 3px;
+            padding: 12px 3px;
+            background: rgb(240, 241, 227);
+        }
+
+        #fruits {
+            float: left;
+            width: 48%;
+        }
+
+        #computer {
+            float: left;
+            width: 48%;
+        }
+
+        #stationary {
+            /* float: left; */
+            clear: both;
+            width: 98%;
+        }
+
+        p,
+        h3 {
+            /* text-align: right; */
+            text-align: justify;
+        }
+
+        h1{
+            width: 450px;
+            margin: 13px auto;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>Welcome to the store</h1>
+        <div id="fruits" class="item">
+            <h3>Fruits</h3>
+            <p id="fruitPara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, debitis
+                tempora voluptatum aliquam quas provident incidunt velit, quae unde quam numquam at molestias voluptas
+                sint sit dolorum minus. Sed ducimus magni non voluptas perferendis.</p>
+        </div>
+        <div id="computer" class="item">
+            <h3>Computer</h3>
+            <p id="computerPara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, debitis
+                tempora voluptatum aliquam quas provident incidunt velit, quae unde quam numquam at molestias voluptas
+                sint sit dolorum minus. Sed ducimus magni non voluptas perferendis.</p>
+        </div>
+        <div id="stationary" class="item">
+            <h3>Stationary</h3>
+            <p id="stationaryPara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt,
+                debitis tempora voluptatum aliquam quas provident incidunt velit, quae unde quam numquam at molestias
+                voluptas sint sit dolorum minus. Sed ducimus magni non voluptas perferendis.</p>
+        </div>
+    </div>
+</body>
+
+</html>

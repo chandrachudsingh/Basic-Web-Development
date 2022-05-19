@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays & Objects</title>
+</head>
+<body>
+    <script>
+        // Object - key valus pairs
+        let employee = {
+            name: "Harry",
+            salary: "10000",
+            channel: "MyChannel",
+            channel2: "MyChannel2",
+        }
+        console.log(employee);  // whole object
+        
+        //both below are correct
+        console.log(employee.channel);
+        console.log(employee['channel2']);
+
+        // Arrays - is also an object
+        let names = [1, 2, 4, "Harry", undefined];
+        console.log(names[1]);
+        console.log(names);  //prints the whole array
+
+        let x = new Array("Harry", 10, 2, 40, undefined);    //can also be defined as:
+        console.log(x);
+        console.log(x.length);
+
+        x = x.sort();    // sorts the array
+        console.log(x);
+
+        x.push("push this");    // push any element into the array
+        console.log(x);
+
+        let y = new Array(23);  // to define an array of size 23
+    </script>
+</body>
+</html>

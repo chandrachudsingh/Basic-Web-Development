@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>CSS Selctors</title>
+
+	<style type="text/css">
+		/* Elememt selector */
+		p{
+			border: 2px solid red;
+		}	
+		div{
+			color: orange;
+		}	
+		/* ID selector */
+		#firstpara{
+			color: greenyellow;
+		}
+		/* class selector */
+		.bgblue{
+			color: salmon;
+			background-color: blue;
+		}
+		/* Grouping selector */
+		footer, span{
+			background-color: peru;
+		}
+	</style>
+
+</head>
+
+<body>
+
+	<h3> CSS Selectors </h3>
+	<p id="firstpara"> This is simple paragraph to demostrate css selectors </p>
+	<p id="secondpara" class="redElement bgblue"> This is another simple paragraph to demostrate css selectors </p>
+	<div>
+		<p id="thirdpara"> This is yet another simple paragraph to demostrate css selectors </p>
+		<span>This is span</span>
+	</div>
+
+	<footer> This is footer</footer>
+</body>
+</html>

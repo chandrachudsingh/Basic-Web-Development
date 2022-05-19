@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alert, Prompt, Confirm</title>
+</head>
+<body>
+    <div class="container">
+        This is a page
+    </div>
+
+    <script>
+        // Alert is a pop-up message - (modale window - can't do anything util it is cleared)
+        alert("Hello");   // does not return anything
+
+        // Prompt is a popup input field
+        let name = prompt("What is your name?", "Guest");
+        console.log(name);
+
+        // Confirm is a true-false type field
+        let deletePost = confirm("Do you really want to delete this post?");
+        // console.log(deletePost);
+
+        if(deletePost)
+            console.log("Post deleted successfully");
+        else 
+            console.log("Post not deleted");
+    </script>
+</body>
+</html>

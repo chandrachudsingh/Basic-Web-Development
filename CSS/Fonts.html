@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonts in CSS</title>
+    
+    <!-- Link to import web font -->
+    <link href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap" rel="stylesheet">
+        <style>
+            /* web fonts=fonts imported from the web */
+            #webfonts{
+                font-family: 'Metal Mania', cursive;
+                font-size: 36px; /* 1px = 1/96th of an inch */
+                line-height: 2em;
+            }
+
+            /* websafe fonts=pre-installed fonts in the operating system */
+            #websafefonts{
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                font-size: 24px;
+            }
+
+            span{
+                font-weight: bold;
+                font-style: italic;
+            }
+        </style>
+</head>
+<body>
+    <h4>CSS Fonts</h4>
+    <p id="webfonts">Lets play with <span>fonts</span>. It is very exciting.</p>
+    <p id="websafefonts">Lets play with <span>fonts</span>. It is very exciting.</p>
+</body>
+</html>

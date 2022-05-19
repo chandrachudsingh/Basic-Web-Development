@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Json tutorial</title>
+</head>
+<body>
+    <div class="container">This is my container</div>
+
+    <!-- JSON is often used when data is sent from a server to a web page. -->
+    <script>
+        let jsonObj = {
+            name: "ccsc",
+            channel: "CWH",
+            friend: "mendul",
+            food: "bhindi"
+        }
+        console.log(jsonObj);
+
+        let myJSonStr = JSON.stringify(jsonObj);    // to stringify the above data so as to transport it easily
+        console.log(myJSonStr);
+
+        myJSonStr = myJSonStr.replace('ccsc', 'abhi');
+        console.log(myJSonStr);
+
+        myJSonStr = JSON.parse(myJSonStr);   // to convert the string back to the object
+        console.log(myJSonStr);
+    </script>
+</body>
+</html>

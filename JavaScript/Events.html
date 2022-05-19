@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events & Listening events</title>
+</head>
+<body>
+    <!-- Browser Events
+    click
+    contextmenu
+    mouseovermouseout
+    mousedown/mouseup
+    mousemove
+
+    submit
+    focus
+
+    DOMContentLoaded
+
+    transitionend -->
+
+    <div class="container">
+        <h1>This is my heading</h1>
+        <p id="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit quibusdam officia ipsa similique voluptates soluta impedit cupiditate, temporibus accusamus cum consectetur ex nobis. Unde quibusdam commodi consequuntur autem adipisci dolorum, asperiores aliquam nobis sapiente, excepturi tempore ducimus, culpa quidem nulla distinctio voluptas tempora eaque. Et ut accusantium iure omnis, aliquid eius iusto voluptate obcaecati? Sint eos eveniet ex atque fuga repellat veniam consequatur odio, neque sunt deleniti adipisci, animi accusamus voluptas illo ea nemo libero, quidem aut fugit. Quisquam iste, ex rem sed et laudantium consectetur dignissimos. Perferendis cupiditate repellat sed in at excepturi earum, debitis, illo reprehenderit dolores doloribus nisi suscipit odit quasi, vitae nulla enim explicabo repellendus provident reiciendis ex accusantium consectetur aspernatur quam? Blanditiis repellendus, beatae asperiores ut neque autem magni natus eius vero, qui quis at minima similique ipsa quae commodi. Doloribus illo earum autem aliquid nihil omnis ipsam. Inventore consequuntur magnam ab quos impedit, error, facilis vero deserunt ipsa ipsam recusandae placeat voluptatum iure autem. Neque voluptas provident, numquam reiciendis distinctio laborum officiis aut ipsam totam, ipsum harum autem molestiae excepturi, nihil nemo possimus? Ipsum dicta perspiciatis asperiores, minima perferendis amet ipsam. Enim incidunt veniam labore ratione repellat deserunt amet libero, nam sapiente perspiciatis sint.</p>
+    </div>
+    <button id="btn" onclick="toggleHide()">Show/Hide</button>
+
+    <script>
+        let para = document.getElementById('para');
+        para.addEventListener("mouseover", function run(){
+            alert('Mouse Inside');
+        });
+        
+        para.addEventListener("mouseout", function run(){
+            alert('Mouse Outside');
+        });
+
+        function toggleHide()
+        {
+            let btn = document.getElementById('btn');
+            if(para.style.display != "none")
+                para.style.display = "none";
+            else
+                para.style.display = "block";
+        }
+    </script>
+</body>
+</html>

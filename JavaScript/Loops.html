@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops</title>
+</head>
+<body>
+    <h1>Loops</h1>
+
+    <script>
+        let friends = ["Rohan", "vaibhav", "shubham", "mendul"]
+        
+        // for-each loop
+        friends.forEach(function f(element){
+            console.log("Hello friends, " + element + " to modern JS");
+        })
+
+        //for-of loop
+        for(element of friends){
+            console.log("Hello friends, " + element + " to modern JS");
+        }
+
+        let employee = {
+            name: "ccsc",
+            salary: 2,
+            channel: "MyChannel"
+        }
+        // for-in loop (Use this loop to iterate over objects in js)
+        for (key in employee){
+            console.log(`The ${key} of employee is ${employee[key]}`);
+        }
+
+        // for, while, do-while loops are same
+    </script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+
+    <style>
+        /* to default set for all the boxes */
+        * {
+            box-sizing: border-box; 
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+           background-color: #e3c0ef; 
+        }
+
+        .container{
+            background-color: rgb(218, 214, 255);
+            border: 3px solid rgb(84, 2, 175);
+            padding: 20px;
+
+            /* we can set margin/padding for top, bottom, left and right like this */
+            /* padding-top: 20px */
+            /* padding-bottom: 30px; */
+            /* padding-left: 10px; */
+            /* padding-right: 20px; */
+
+            /* padding/margin : top right bottom left */
+            /* padding: 20px 30x 10px 20px; */
+
+            /* padding/margin: y(top/bottom) x(left/right); */
+            /* padding: 10px 20px */
+
+            margin: 14px 20px;
+            border-radius: 23px;
+            width: 450px;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat voluptas cum accusantium quam culpa nulla ab quisquam itaque fugiat sapiente.</p>
+    </div>
+    
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste reiciendis eum fugiat modi, nulla vitae asperiores accusamus molestiae facilis quis.</p>
+    </div>
+    
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus quas recusandae fuga dignissimos quisquam enim blanditiis similique corrupti numquam a?</p>
+    </div>
+</body>
+</html>

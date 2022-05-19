@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings</title>
+</head>
+<body>
+    <div class="container">
+        <div id="row">
+            <p>
+                This is a row in the container
+            </p>
+        </div>
+    </div>
+
+    <script>
+        var string = "thi's";
+        var name = "ccsc";
+        var message = "ccsc is a good boy";
+        var name = "ccsc";
+        console.log(name + message + name);
+
+        //imp
+        var temp = `${name} is a nice person & message ${message}`;
+        console.log(temp);
+
+        var len = name.length;
+        console.log(len);
+
+        //to write into the tag
+        document.getElementById('row').innerHTML = "<h3> Hello </h3>";
+    </script>
+</body>
+</html>

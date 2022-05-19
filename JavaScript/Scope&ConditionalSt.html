@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope, If-else conditionals & switch case</title>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>Item-1</li>
+            <li>Item-2</li>
+            <li>Item-3</li>
+            <li>Item-4</li>
+            <li>Item-5</li>
+            <li>Item-6</li>
+            <li>Item-7</li>
+        </ul>
+    </div>
+
+    <script>
+        var string1 = "This is a string1";
+        console.log(string1);
+
+        // let datatype have block scope
+        let a ="u";
+        {
+            let a = "u1";
+            console.log(a);
+        }
+        console.log(a);
+
+        // const cannot be changed
+        const x = "This cannot be changed";
+        // a = "lets change it, it will show error";
+        console.log(x);
+
+        // Now if-else and switch statement are same as always
+    </script>
+</body>
+</html>

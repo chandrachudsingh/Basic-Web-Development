@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Size units</title>
+    <style>
+        html {
+            font-size: 15px;
+        }
+
+        .container {
+            border: 2px solid yellowgreen;
+            font-size: 10px;
+            /* vw(vieport width) means that % of the browser width */
+            width: 100vw;
+            /* vh(vieport height) means that % of the browser height */
+            height: 100vh;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        #first {
+            font-size: 3em;
+            /* em means that times the size of the parent(container here) */
+
+            padding: 3em;
+            /* if font-size is set then em means that times of font-size for all other proprties, and if font-size not set that that times of default size of that element */
+        }
+
+        #second {
+            /* rem means that times of the root element(html) for all properties */
+            font-size: 3rem;
+            padding: 3rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="first">This is first heading.</h1>
+        <h1 id="second">This is second heading.</h1>
+        <h1 id="third">This is third heading.</h1>
+    </div>
+</body>
+
+</html>
